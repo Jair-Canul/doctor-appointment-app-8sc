@@ -1,3 +1,3 @@
 <x-admin-layout>
-    Hola XD
+    Hola Maestro:D 
 </x-admin-layout>
