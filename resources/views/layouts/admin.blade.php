@@ -20,8 +20,13 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+        <!--Fontawesome-->
         <script src="https://kit.fontawesome.com/a3035e377e.js" crossorigin="anonymous"></script>
 
+        <!--Sweet Alert 2-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!--Wire-UI-->
         <wireui:scripts />
 
         <!-- Styles -->
@@ -50,5 +55,13 @@
         @livewireScripts
 
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        {{--Mostrar sweet alert--}}
+        @if (@session('swal'))
+            <script>
+                Swal.fire(@json(session('swal')));
+            </script>
+            
+        @endif
     </body>
 </html>
