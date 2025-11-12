@@ -5,11 +5,11 @@
         ['name' => 'Roles']
     ]"
 >
- <div class="flex justify-end mb-4">
-    <x-wire-button href="{{ route('admin.roles.create') }}" blue>
-        <i class="fa-solid fa-plus mr-2"></i> Nuevo
-    </x-wire-button>
-</div>
-    @livewire('admin.datatables.role-table')
+ <x-slot name="actions">
+        <x-wire-button href="{{ route('admin.roles.create') }}" blue>
+            <i class="fa-solid fa-plus mr-2"></i> Nuevo
+        </x-wire-button>
+    </x-slot>
 
+    @livewire('admin.datatables.role-table')
 </x-admin-layout>
