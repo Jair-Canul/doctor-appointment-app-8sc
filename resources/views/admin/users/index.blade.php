@@ -9,8 +9,9 @@
         <x-wire-button href="{{ route('admin.users.create') }}" blue>
             <i class="fa-solid fa-plus mr-2"></i> Nuevo
         </x-wire-button>
-    </x-slot>
-    
 
+    </x-slot>
+
+    @livewire('admin.datatables.user-table')
    
 </x-admin-layout>
